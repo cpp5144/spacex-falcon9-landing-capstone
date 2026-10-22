@@ -13,7 +13,7 @@ This repository contains a reproducible analysis and presentation for the IBM Ap
 
 | File | Purpose |
 | --- | --- |
-| `Data Science Capstone Project Report.pdf` | 35-slide report with the methods, charts, SQL findings, dashboard results, model comparison, and conclusions. |
+| `Data Science Capstone Project Report.pdf` | 38-slide report with the methods, charts, SQL findings, dashboard results, model comparison, and conclusions. |
 | `capstone_analysis.ipynb` | Notebook to inspect the released datasets, reproduce summary statistics, SQL examples, and model results. |
 | `analyze.py` | Reproducible analysis and model comparison. Writes `analysis_results.json`. |
 | `visuals.py` | Builds the Folium map and Plotly Dash-style standalone dashboard. |

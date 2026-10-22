@@ -241,6 +241,60 @@ for idx, (name, detail) in enumerate(evidence):
     lines(detail, x + 17, yy - 10, 392, 10.5, 12, DARK)
 finish()
 
+header("Detailed results and source links", "Assessment evidence",
+       "Numeric results below are reproduced by the notebook and Python files in the public repository.")
+
+def evidence_block(title, body, x, y, width=385):
+    lines(title, x, y, width, 14, 18, NAVY, "Helvetica-Bold")
+    return lines(body, x, y - 23, width, 10.5, 14, DARK) - 12
+
+
+left_y = 370
+left_y = evidence_block("Direct GitHub files", (
+    f"Repository: {REPO_URL}\n"
+    "Notebook: capstone_analysis.ipynb\n"
+    "Analysis and SQL: analyze.py\n"
+    "Folium and Plotly: visuals.py; launch_sites_map.html; launch_dashboard.html\n"
+    "Report source: build_report.py. The footer links to the repository on every slide."
+), 55, left_y)
+left_y = evidence_block("Six EDA visualization results", (
+    "1 Flight vs site: later flights show more landings.\n"
+    "2 Payload vs site: outcomes overlap across payloads.\n"
+    "3 Orbit bars: GTO 14/27, VLEO 12/14.\n"
+    "4 Flight vs orbit: mission mix changes over time.\n"
+    "5 Payload vs orbit: GTO/VLEO include heavier loads.\n"
+    "6 Year trend: 2014 2/6; 2017 15/18; 2020 16/19."
+), 55, left_y)
+evidence_block("Folium map and Plotly Dash", (
+    "Map markers: CCAFS 33/55, KSC 17/22, VAFB 10/13; Florida sites are nearby. "
+    "Dashboard: 56 launches, 24 landings; KSC pie 10/13, plus payload-versus-outcome scatter."
+), 55, left_y)
+
+right_y = 370
+right_y = evidence_block("Ten SQL query results", (
+    "1 Four launch-site labels in SQL snapshot.\n"
+    "2 First five CCA records: 2010-06-04 to 2013-03-01.\n"
+    "3 NASA payload mass: 107,010 kg.\n"
+    "4 F9 v1.1 mean payload: 2,534.7 kg.\n"
+    "5 First ground-pad landing: 2015-12-22.\n"
+    "6 Four drone-ship landings with 4-6 t payload.\n"
+    "7 Mission outcome Success: 98 records.\n"
+    "8 Maximum payload: 15,600 kg.\n"
+    "9 Two failed drone landings in 2015.\n"
+    "10 2010-17: no attempt 10, drone success 5, drone failure 5."
+), 500, right_y)
+right_y = evidence_block("Model evaluation and best model", (
+    "CV/test accuracy: logistic .809/.778; linear SVM .809/.778; KNN .805/.667; "
+    "tree .834/.778. Best CV model: depth-2 tree. Holdout confusion matrix: "
+    "[[6,0],[4,8]]; majority baseline .667."
+), 500, right_y)
+evidence_block("Conclusion and original insight", (
+    "The integrated map/dashboard/SQL views show site and mission differences, but changing "
+    "launch mix prevents a causal site claim. The 90-launch sample and four missed landings "
+    "limit operational use; external validation is needed."
+), 500, right_y)
+finish()
+
 header("Repository and source files", "Assessment links",
        "The project repository contains the completed notebook, scripts, inputs and outputs.")
 repo_files = [

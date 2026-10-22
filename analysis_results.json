@@ -1,0 +1,559 @@
+{
+  "dataset": {
+    "launches": 90,
+    "successful_landings": 60,
+    "success_rate": 0.6667,
+    "year_min": 2010,
+    "year_max": 2020,
+    "dashboard_rows": 56,
+    "sql_rows": 101,
+    "missing_landing_pad": 26
+  },
+  "groups": {
+    "Year": [
+      {
+        "Year": "2010",
+        "count": 1,
+        "sum": 0,
+        "mean": 0.0
+      },
+      {
+        "Year": "2012",
+        "count": 1,
+        "sum": 0,
+        "mean": 0.0
+      },
+      {
+        "Year": "2013",
+        "count": 3,
+        "sum": 0,
+        "mean": 0.0
+      },
+      {
+        "Year": "2014",
+        "count": 6,
+        "sum": 2,
+        "mean": 0.3333
+      },
+      {
+        "Year": "2015",
+        "count": 6,
+        "sum": 2,
+        "mean": 0.3333
+      },
+      {
+        "Year": "2016",
+        "count": 8,
+        "sum": 5,
+        "mean": 0.625
+      },
+      {
+        "Year": "2017",
+        "count": 18,
+        "sum": 15,
+        "mean": 0.8333
+      },
+      {
+        "Year": "2018",
+        "count": 18,
+        "sum": 11,
+        "mean": 0.6111
+      },
+      {
+        "Year": "2019",
+        "count": 10,
+        "sum": 9,
+        "mean": 0.9
+      },
+      {
+        "Year": "2020",
+        "count": 19,
+        "sum": 16,
+        "mean": 0.8421
+      }
+    ],
+    "LaunchSite": [
+      {
+        "LaunchSite": "CCAFS SLC 40",
+        "count": 55,
+        "sum": 33,
+        "mean": 0.6
+      },
+      {
+        "LaunchSite": "KSC LC 39A",
+        "count": 22,
+        "sum": 17,
+        "mean": 0.7727
+      },
+      {
+        "LaunchSite": "VAFB SLC 4E",
+        "count": 13,
+        "sum": 10,
+        "mean": 0.7692
+      }
+    ],
+    "Orbit": [
+      {
+        "Orbit": "ES-L1",
+        "count": 1,
+        "sum": 1,
+        "mean": 1.0
+      },
+      {
+        "Orbit": "GEO",
+        "count": 1,
+        "sum": 1,
+        "mean": 1.0
+      },
+      {
+        "Orbit": "GTO",
+        "count": 27,
+        "sum": 14,
+        "mean": 0.5185
+      },
+      {
+        "Orbit": "HEO",
+        "count": 1,
+        "sum": 1,
+        "mean": 1.0
+      },
+      {
+        "Orbit": "ISS",
+        "count": 21,
+        "sum": 13,
+        "mean": 0.619
+      },
+      {
+        "Orbit": "LEO",
+        "count": 7,
+        "sum": 5,
+        "mean": 0.7143
+      },
+      {
+        "Orbit": "MEO",
+        "count": 3,
+        "sum": 2,
+        "mean": 0.6667
+      },
+      {
+        "Orbit": "PO",
+        "count": 9,
+        "sum": 6,
+        "mean": 0.6667
+      },
+      {
+        "Orbit": "SO",
+        "count": 1,
+        "sum": 0,
+        "mean": 0.0
+      },
+      {
+        "Orbit": "SSO",
+        "count": 5,
+        "sum": 5,
+        "mean": 1.0
+      },
+      {
+        "Orbit": "VLEO",
+        "count": 14,
+        "sum": 12,
+        "mean": 0.8571
+      }
+    ],
+    "PayloadQuartile": [
+      {
+        "PayloadQuartile": "Q1",
+        "count": 23,
+        "sum": 14,
+        "mean": 0.6087
+      },
+      {
+        "PayloadQuartile": "Q2",
+        "count": 22,
+        "sum": 15,
+        "mean": 0.6818
+      },
+      {
+        "PayloadQuartile": "Q3",
+        "count": 22,
+        "sum": 11,
+        "mean": 0.5
+      },
+      {
+        "PayloadQuartile": "Q4",
+        "count": 23,
+        "sum": 20,
+        "mean": 0.8696
+      }
+    ],
+    "Reused": [
+      {
+        "Reused": "False",
+        "count": 53,
+        "sum": 31,
+        "mean": 0.5849
+      },
+      {
+        "Reused": "True",
+        "count": 37,
+        "sum": 29,
+        "mean": 0.7838
+      }
+    ],
+    "GridFins": [
+      {
+        "GridFins": "False",
+        "count": 20,
+        "sum": 2,
+        "mean": 0.1
+      },
+      {
+        "GridFins": "True",
+        "count": 70,
+        "sum": 58,
+        "mean": 0.8286
+      }
+    ],
+    "Legs": [
+      {
+        "Legs": "False",
+        "count": 19,
+        "sum": 1,
+        "mean": 0.0526
+      },
+      {
+        "Legs": "True",
+        "count": 71,
+        "sum": 59,
+        "mean": 0.831
+      }
+    ]
+  },
+  "dashboard": [
+    {
+      "Launch Site": "CCAFS LC-40",
+      "count": 26,
+      "sum": 7,
+      "mean": 0.2692
+    },
+    {
+      "Launch Site": "CCAFS SLC-40",
+      "count": 7,
+      "sum": 3,
+      "mean": 0.4286
+    },
+    {
+      "Launch Site": "KSC LC-39A",
+      "count": 13,
+      "sum": 10,
+      "mean": 0.7692
+    },
+    {
+      "Launch Site": "VAFB SLC-4E",
+      "count": 10,
+      "sum": 4,
+      "mean": 0.4
+    }
+  ],
+  "sql": {
+    "launch_sites": {
+      "query": "SELECT DISTINCT Launch_Site FROM SPACEXTBL ORDER BY Launch_Site",
+      "rows": [
+        {
+          "Launch_Site": "CCAFS LC-40"
+        },
+        {
+          "Launch_Site": "CCAFS SLC-40"
+        },
+        {
+          "Launch_Site": "KSC LC-39A"
+        },
+        {
+          "Launch_Site": "VAFB SLC-4E"
+        }
+      ]
+    },
+    "five_cca_records": {
+      "query": "SELECT Date, Launch_Site FROM SPACEXTBL WHERE Launch_Site LIKE 'CCA%' LIMIT 5",
+      "rows": [
+        {
+          "Date": "2010-06-04",
+          "Launch_Site": "CCAFS LC-40"
+        },
+        {
+          "Date": "2010-12-08",
+          "Launch_Site": "CCAFS LC-40"
+        },
+        {
+          "Date": "2012-05-22",
+          "Launch_Site": "CCAFS LC-40"
+        },
+        {
+          "Date": "2012-10-08",
+          "Launch_Site": "CCAFS LC-40"
+        },
+        {
+          "Date": "2013-03-01",
+          "Launch_Site": "CCAFS LC-40"
+        }
+      ]
+    },
+    "nasa_payload_kg": {
+      "query": "SELECT SUM(PAYLOAD_MASS__KG_) AS total_kg FROM SPACEXTBL WHERE Customer LIKE '%NASA%'",
+      "rows": [
+        {
+          "total_kg": 107010
+        }
+      ]
+    },
+    "f9_v11_average_kg": {
+      "query": "SELECT AVG(PAYLOAD_MASS__KG_) AS average_kg FROM SPACEXTBL WHERE Booster_Version LIKE 'F9 v1.1%'",
+      "rows": [
+        {
+          "average_kg": 2534.6666666666665
+        }
+      ]
+    },
+    "first_ground_pad_success": {
+      "query": "SELECT MIN(Date) AS first_date FROM SPACEXTBL WHERE Landing_Outcome = 'Success (ground pad)'",
+      "rows": [
+        {
+          "first_date": "2015-12-22"
+        }
+      ]
+    },
+    "drone_ship_4000_6000": {
+      "query": "SELECT Booster_Version, PAYLOAD_MASS__KG_ FROM SPACEXTBL WHERE Landing_Outcome = 'Success (drone ship)' AND PAYLOAD_MASS__KG_ > 4000 AND PAYLOAD_MASS__KG_ < 6000",
+      "rows": [
+        {
+          "Booster_Version": "F9 FT B1022",
+          "PAYLOAD_MASS__KG_": 4696
+        },
+        {
+          "Booster_Version": "F9 FT B1026",
+          "PAYLOAD_MASS__KG_": 4600
+        },
+        {
+          "Booster_Version": "F9 FT  B1021.2",
+          "PAYLOAD_MASS__KG_": 5300
+        },
+        {
+          "Booster_Version": "F9 FT  B1031.2",
+          "PAYLOAD_MASS__KG_": 5200
+        }
+      ]
+    },
+    "mission_outcome_counts": {
+      "query": "SELECT Mission_Outcome, COUNT(*) AS launches FROM SPACEXTBL GROUP BY Mission_Outcome ORDER BY launches DESC",
+      "rows": [
+        {
+          "Mission_Outcome": "Success",
+          "launches": 98
+        },
+        {
+          "Mission_Outcome": "Success (payload status unclear)",
+          "launches": 1
+        },
+        {
+          "Mission_Outcome": "Success ",
+          "launches": 1
+        },
+        {
+          "Mission_Outcome": "Failure (in flight)",
+          "launches": 1
+        }
+      ]
+    },
+    "maximum_payload_booster": {
+      "query": "SELECT Booster_Version, PAYLOAD_MASS__KG_ FROM SPACEXTBL WHERE PAYLOAD_MASS__KG_ = (SELECT MAX(PAYLOAD_MASS__KG_) FROM SPACEXTBL)",
+      "rows": [
+        {
+          "Booster_Version": "F9 B5 B1048.4",
+          "PAYLOAD_MASS__KG_": 15600
+        },
+        {
+          "Booster_Version": "F9 B5 B1049.4",
+          "PAYLOAD_MASS__KG_": 15600
+        },
+        {
+          "Booster_Version": "F9 B5 B1051.3",
+          "PAYLOAD_MASS__KG_": 15600
+        },
+        {
+          "Booster_Version": "F9 B5 B1056.4",
+          "PAYLOAD_MASS__KG_": 15600
+        },
+        {
+          "Booster_Version": "F9 B5 B1048.5",
+          "PAYLOAD_MASS__KG_": 15600
+        },
+        {
+          "Booster_Version": "F9 B5 B1051.4",
+          "PAYLOAD_MASS__KG_": 15600
+        },
+        {
+          "Booster_Version": "F9 B5 B1049.5",
+          "PAYLOAD_MASS__KG_": 15600
+        },
+        {
+          "Booster_Version": "F9 B5 B1060.2 ",
+          "PAYLOAD_MASS__KG_": 15600
+        },
+        {
+          "Booster_Version": "F9 B5 B1058.3 ",
+          "PAYLOAD_MASS__KG_": 15600
+        },
+        {
+          "Booster_Version": "F9 B5 B1051.6",
+          "PAYLOAD_MASS__KG_": 15600
+        },
+        {
+          "Booster_Version": "F9 B5 B1060.3",
+          "PAYLOAD_MASS__KG_": 15600
+        },
+        {
+          "Booster_Version": "F9 B5 B1049.7 ",
+          "PAYLOAD_MASS__KG_": 15600
+        }
+      ]
+    },
+    "failed_drone_ship_2015": {
+      "query": "SELECT Date, Booster_Version, Launch_Site, Landing_Outcome FROM SPACEXTBL WHERE Date LIKE '2015%' AND Landing_Outcome LIKE 'Failure (drone ship)'",
+      "rows": [
+        {
+          "Date": "2015-01-10",
+          "Booster_Version": "F9 v1.1 B1012",
+          "Launch_Site": "CCAFS LC-40",
+          "Landing_Outcome": "Failure (drone ship)"
+        },
+        {
+          "Date": "2015-04-14",
+          "Booster_Version": "F9 v1.1 B1015",
+          "Launch_Site": "CCAFS LC-40",
+          "Landing_Outcome": "Failure (drone ship)"
+        }
+      ]
+    },
+    "outcome_rank_2010_2017": {
+      "query": "SELECT Landing_Outcome, COUNT(*) AS launches FROM SPACEXTBL WHERE Date BETWEEN '2010-06-04' AND '2017-03-20' GROUP BY Landing_Outcome ORDER BY launches DESC",
+      "rows": [
+        {
+          "Landing_Outcome": "No attempt",
+          "launches": 10
+        },
+        {
+          "Landing_Outcome": "Success (drone ship)",
+          "launches": 5
+        },
+        {
+          "Landing_Outcome": "Failure (drone ship)",
+          "launches": 5
+        },
+        {
+          "Landing_Outcome": "Success (ground pad)",
+          "launches": 3
+        },
+        {
+          "Landing_Outcome": "Controlled (ocean)",
+          "launches": 3
+        },
+        {
+          "Landing_Outcome": "Uncontrolled (ocean)",
+          "launches": 2
+        },
+        {
+          "Landing_Outcome": "Failure (parachute)",
+          "launches": 2
+        },
+        {
+          "Landing_Outcome": "Precluded (drone ship)",
+          "launches": 1
+        }
+      ]
+    }
+  },
+  "classification": {
+    "split": {
+      "train": 72,
+      "test": 18,
+      "test_positive": 12,
+      "seed": 2
+    },
+    "majority_class_test_accuracy": 0.667,
+    "models": [
+      {
+        "model": "Logistic regression",
+        "parameters": {
+          "C": 1.0
+        },
+        "cross_validation_accuracy": 0.809,
+        "test_accuracy": 0.778,
+        "confusion_matrix": [
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            11
+          ]
+        ]
+      },
+      {
+        "model": "Linear SVM",
+        "parameters": {
+          "C": 0.1
+        },
+        "cross_validation_accuracy": 0.809,
+        "test_accuracy": 0.778,
+        "confusion_matrix": [
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            11
+          ]
+        ]
+      },
+      {
+        "model": "K nearest neighbors",
+        "parameters": {
+          "k": 3
+        },
+        "cross_validation_accuracy": 0.805,
+        "test_accuracy": 0.667,
+        "confusion_matrix": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            12
+          ]
+        ]
+      },
+      {
+        "model": "Decision tree",
+        "parameters": {
+          "max_depth": 2
+        },
+        "cross_validation_accuracy": 0.834,
+        "test_accuracy": 0.778,
+        "confusion_matrix": [
+          [
+            6,
+            0
+          ],
+          [
+            4,
+            8
+          ]
+        ]
+      }
+    ],
+    "selected_model": "Decision tree"
+  }
+}

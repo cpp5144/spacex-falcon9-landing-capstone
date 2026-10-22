@@ -211,6 +211,54 @@ def site_map(outcomes=False):
             c.drawString(label_x, label_y - 16, f"{row.success}/{row.launches} landings")
 
 
+header("Submission evidence at a glance", "Assessment index",
+       "All 15 rubric points are supported by the report and the public repository below.")
+evidence = [
+    ("1. GitHub repository", "Public notebook, Python scripts, datasets and interactive HTML."),
+    ("2. PDF presentation", "This PDF is the completed Data Science Capstone Project Report."),
+    ("3. Executive Summary", "90 launches, 60 landings; decision tree test accuracy 77.8%."),
+    ("4. Introduction", "Predict Falcon 9 first-stage landing from historical flight attributes."),
+    ("5. Collection and wrangling", "API and web-table workflow; IBM snapshots; 26 missing landing-pad values."),
+    ("6. EDA methods", "Scatter, orbit bar and yearly charts; ten SQL queries in SQLite."),
+    ("7. Classification methods", "80/20 split, five-fold CV, four classifiers."),
+    ("8. Visualization results", "Six EDA result slides show flight, payload, launch-site, orbit and yearly patterns."),
+    ("9. SQL results", "Ten query/result slides cover sites, payloads, booster types, outcomes and dates."),
+    ("10. Folium map", "Site markers, landing popups and proximity; HTML in GitHub."),
+    ("11. Plotly Dash", "Success pie and payload/outcome scatter; HTML in GitHub."),
+    ("12. Model results", "Tree CV accuracy 83.4%; holdout 77.8%; confusion matrix [[6,0],[4,8]]."),
+    ("13. Conclusion", "Historical associations are descriptive; small sample limits operational use."),
+    ("14. Creativity", "Dashboard, location map, SQL results and model caveats together."),
+    ("15. Innovative insight", "Site rates vary with launch mix; they do not prove a causal effect."),
+]
+for idx, (name, detail) in enumerate(evidence):
+    col = 0 if idx < 8 else 1
+    row = idx if idx < 8 else idx - 8
+    x = 51 if col == 0 else 491
+    yy = 368 - row * 42
+    c.setFillColor(TEAL)
+    c.circle(x + 5, yy + 5, 3.5, stroke=0, fill=1)
+    lines(name, x + 17, yy + 9, 392, 13, 15, NAVY, "Helvetica-Bold")
+    lines(detail, x + 17, yy - 10, 392, 10.5, 12, DARK)
+finish()
+
+header("Repository and source files", "Assessment links",
+       "The project repository contains the completed notebook, scripts, inputs and outputs.")
+repo_files = [
+    "capstone_analysis.ipynb — executable analysis notebook",
+    "analyze.py — data summaries, SQL results and four model comparisons",
+    "visuals.py — Folium map and Plotly interactive dashboard",
+    "build_report.py — reproducible PDF presentation generator",
+    "dataset_part_2.csv, dataset_part_3.csv — IBM course launch data",
+    "Spacex.csv, spacex_launch_dash.csv — IBM SQL and dashboard data",
+    "launch_sites_map.html, launch_dashboard.html — interactive outputs",
+]
+y = 370
+for item in repo_files:
+    y = bullet(item, y, 62, 835)
+lines(f"GitHub: {REPO_URL}", 62, 82, 850, 14, 18, BLUE)
+finish()
+
+
 header("Falcon 9 first-stage landing prediction", "Data Science Capstone",
        "Data Science Capstone Project Report | Historical IBM Skills Network dataset")
 c.setFillColor(NAVY)
@@ -224,7 +272,7 @@ if REPO_URL:
     lines(f"Project repository: {REPO_URL}", 53, 64, 850, 12, 16, BLUE)
 finish()
 
-header("Executive summary", "Overview")
+header("Executive Summary", "Overview")
 y = 396
 for text in (
     "The released historical dataset has 90 Falcon 9 launches from 2010 through 2020. The first stage landed successfully in 60 cases (66.7%).",
@@ -234,7 +282,7 @@ for text in (
     y = bullet(text, y)
 finish()
 
-header("Project question and context", "Introduction")
+header("Introduction", "Project question and context")
 y = 393
 for text in (
     "SpaceX reuses first-stage boosters. Predicting whether a stage will land can help describe mission risk in this historical teaching dataset.",
@@ -245,7 +293,7 @@ for text in (
 lines("Outcome definition: Class = 1 for a successful first-stage landing; Class = 0 otherwise.", 66, 162, 820, 16, 22, GRAY)
 finish()
 
-header("Data sources and collection", "Methodology")
+header("Data Collection: SpaceX API and course snapshots", "Methodology")
 y = 387
 for text in (
     "IBM Skills Network released dataset_part_2.csv (90 labeled launches) and dataset_part_3.csv (83 model features), aligned by FlightNumber.",
@@ -255,7 +303,7 @@ for text in (
     y = bullet(text, y)
 finish()
 
-header("API and scraping workflow", "Methodology", "Collection method taught in the course")
+header("Data Collection: Web Scraping Workflow", "Methodology", "Collection method taught in the course")
 steps = [
     ("API request", "Past launches\nBooster / payload IDs"),
     ("Resolve records", "Rocket, launchpad\nPayload attributes"),
@@ -279,7 +327,7 @@ for i, (title, detail) in enumerate(steps):
 lines("Reproduction input: official IBM course CSVs. Live collection code is not claimed as executed.", 65, 160, 835, 15, 22, GRAY)
 finish()
 
-header("Data wrangling", "Methodology")
+header("Data Wrangling Methodology", "Methodology")
 y = 392
 for text in (
     "Parsed Date to year for trend analysis, retained IBM's binary Class label, and verified that the 90 feature rows align with the 90 labeled rows by FlightNumber.",
@@ -289,7 +337,7 @@ for text in (
     y = bullet(text, y)
 finish()
 
-header("EDA and SQL approach", "Methodology")
+header("EDA with Visualization and SQL Methodology", "Methodology")
 y = 392
 for text in (
     "Scatter plots compare flight number and payload mass with launch site and orbit; point color shows the landing outcome.",
@@ -299,7 +347,7 @@ for text in (
     y = bullet(text, y)
 finish()
 
-header("Interactive analytics", "Methodology")
+header("Folium and Plotly Dash Methodology", "Interactive analytics")
 y = 390
 for text in (
     "Folium maps use recorded latitude and longitude to mark the three sites and show launch count and landing rate in each marker's popup.",
@@ -309,7 +357,7 @@ for text in (
     y = bullet(text, y)
 finish()
 
-header("Classification design", "Methodology")
+header("Predictive Analysis: Classification", "Methodology")
 y = 394
 for text in (
     "A stratified 80/20 split leaves 72 launches for training and 18 for the untouched test set; random seed 2 fixes the split.",
@@ -500,7 +548,7 @@ c.drawRightString(origin_x - 18, origin_y + 51, "Actual: landing")
 lines("The tree correctly classifies all 6 non-landings but misses 4 of 12 landings in this small test split.", 75, 100, 805, 14, 20, GRAY)
 finish()
 
-header("Conclusions", "Takeaways")
+header("Conclusion", "Takeaways")
 y = 392
 for text in (
     "The historical first-stage landing rate is 66.7% across 90 launches. It improves markedly after the earliest years, but the annual groups vary in size.",
